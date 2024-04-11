@@ -1,10 +1,9 @@
 namespace PackageCalculator;
 
-public abstract class PostageOption
+public class PostageOptions
 {
-    public string Name { get; protected set; }
-    public int MaxWeight { get; protected set; }
-
-    public abstract bool IsSuitable(Item item);
-    public abstract double CalculateCost(Item item);
+    public string CalculatePostageOption(Item item)
+    {
+        // Logic for calculating postage option based on item's weight and dimensions
+    }
 }
